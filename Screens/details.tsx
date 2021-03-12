@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Details(props: any) {
 
   return (
-    <View style={styles.container}>
+    <View testID="details-wrapper" style={styles.container}>
      <View style={styles.card}>
 				<Text>Is Potentially Hazardous: {props.route.params.is_potentially_hazardous_asteroid}</Text>
 				<Text>Nasa Url: {props.route.params.nasa_jpl_url}</Text>

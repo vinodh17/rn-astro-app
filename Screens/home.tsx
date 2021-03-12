@@ -15,13 +15,11 @@ const [id, setId] = useState('');
 	}
 
 	const search = () => {
-// console.log(id);
 props.searchById(id, props.navigation);
-		// props.navigation.navigate('Details')
 	}
 
   return (
-    <View style={styles.container}>
+    <View testID="home-wrapper" style={styles.container}>
       <TextInput style={styles.input} onChangeText={(val) => setId(val)} placeholder="Search By Id" />
 
 <View style={styles.btns}>
